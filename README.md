@@ -1,18 +1,50 @@
-## Getting Started
+# Biblioteca Árvore B
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um sistema simples de gerenciamento de livros utilizando uma Árvore B em Java. Permite inserir, buscar e listar livros de forma eficiente, mantendo-os organizados em ordem alfabética pelo título.
 
-## Folder Structure
+## Funcionalidades
+- Inserção de livros (título, autor, ISBN)
+- Busca de livros por ISBN
+- Listagem de todos os livros em ordem alfabética (formato de tabela)
+- Visualização da estrutura da Árvore B
+- Livros clássicos já cadastrados ao iniciar o programa
 
-The workspace contains two folders by default, where:
+## Como executar
+1. Compile o projeto:
+   ```sh
+   javac -d bin src/BibliotecaArvoreB.java
+   ```
+2. Execute o programa:
+   ```sh
+   java -cp bin BibliotecaArvoreB
+   ```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Exemplo de uso
+```
+=== Menu Biblioteca ===
+1. Inserir livro
+2. Buscar livro por ISBN
+3. Listar livros em ordem alfabética
+4. Exibir estrutura da árvore
+5. Sair
+Escolha uma opção: 3
+=== Lista de Livros em Ordem Alfabética ===
++------------------------------+------------------------------+----------------------+
+| Título                      | Autor                        | ISBN                 |
++------------------------------+------------------------------+----------------------+
+| 1984                        | George Orwell                | 9780451524935        |
+| Cem Anos de Solidão         | Gabriel García Márquez       | 9780060883287        |
+| ...                         | ...                          | ...                  |
++------------------------------+------------------------------+----------------------+
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura do Projeto
+- `src/`: código-fonte Java
+- `bin/`: arquivos compilados
+- `lib/`: dependências (não utilizadas neste projeto)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Requisitos
+- Java 8 ou superior
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+Projeto acadêmico para fins de estudo de estruturas de dados (Árvore B) em Java.
